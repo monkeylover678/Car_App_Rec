@@ -142,7 +142,6 @@ else:
     st.subheader('Top 5 Recommended Cars:')
     for idx, row in recommended_cars.iterrows():
         with st.expander(f"{row['Make']} {row['Model']} - ${row['Price(USD)']:,.2f}"):
-            st.image(f"images/{row['Make']}_{row['Model']}.jpg", caption=f"{row['Make']} {row['Model']}", use_column_width=True)
             st.write(f"Year: {row['Year']}")
             st.write(f"Mileage: {int(row['Mileage']):,} miles")
             st.write(f"Engine: {row['Engine']}")
