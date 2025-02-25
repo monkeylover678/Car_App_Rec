@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 # Set page config with a new background and title
 st.set_page_config(page_title="Car Recommendation System", page_icon="🚗", layout="wide")
 
-# Load Data
+# Loading the Data
 file_path = 'final_data.csv'
 data = pd.read_csv(file_path)
 
